@@ -32,6 +32,53 @@ const music = {
         }
     },
 
+    // Alice in Chains Object
+    'alice in chains': {
+        albums: {
+            'the essential alice in chains': {
+                year: 2006,
+                members: {
+                    vocals: 'Lanye Staley',
+                    guitar: 'Jerry Cantrell',
+                    bass: ['Mike Starr', ' Mike Inez'],
+                    drums: 'Sean Kinney',
+                },
+                tracks: {
+                    /*DISK 1*/
+                    1: 'We Die  (from Facelift)',
+                    2: 'Man in the Box (from Facelift)',
+                    3: 'Sea of Sorrow (from Facelift)',
+                    4: 'Love, Hate, Love (from Facelift)',
+                    5: 'Am I Inside (from Sap)',
+                    6: 'Brother (from Sap (Alternate Mix without Ann Wilson\'s backing vocals))',
+                    7: 'Got Me Wrong (From Sap)',
+                    8: 'Right Turn (from Sap)',
+                    9: 'Rain When I Die (from Kinney, Dirt)',
+                    10: 'Them Bones (from Dirt)',
+                    11: 'Angry Chair (from Dirt)',
+                    12: 'Dam That River (from Dirt)',
+                    13: 'Dirt (from Dirt)',
+                    14: 'God Smack (from Dirt)',
+                    15: 'Hate to Feel (from Dirt)',
+                    16: 'Rooster (from Dirt)',
+                    /*DISK 2*/
+                    17: 'No Excuses (from Jar of Flies)',
+                    18: 'I Stay Away (from Jar of Flies)',
+                    19: 'What the Hell have I (remix from Music Bank)',
+                    20: 'A Little Bitter (remix from Music Bank)',
+                    21: 'Grind (from Alice in Chains)',
+                    22: 'Heaven Beside You (from Alice in Chains)',
+                    23: 'Again (from Alice in Chains)',
+                    24: 'Over Now (live acoustic version from Unplugged)',
+                    25: 'Nutshell (live acoustic version from unplugged)',
+                    26: 'Get Born Again (from Nothing Safe: Best of the Box)',
+                    27: 'Died (from Music Bank)',
+                    28: 'Would? (from (dirt)'
+                }
+            },
+        },
+    },
+
     // Eagle Object
     eagles: {
         albums: {
@@ -522,7 +569,7 @@ const music = {
         data(bandName, album) {
             let key = ''
             // clear all data from screen
-            for (let i = 0; i < 21; i++) {
+            for (let i = 0; i < 33; i++) {
                 key = 'demo' + i
                 document.getElementById(key).innerHTML = ''
             }
@@ -568,7 +615,7 @@ const music = {
                     // clear error message if there is one
                     document.getElementById('error').innerHTML = ''
                     // clear all data from screen
-                    for (let i = 0; i < 21; i++) {
+                    for (let i = 0; i < 33; i++) {
                     key = 'demo' + i
                     document.getElementById(key).innerHTML = ''
                     }
