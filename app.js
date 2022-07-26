@@ -79,6 +79,79 @@ const music = {
         },
     },
 
+    // Bad Company Object
+    'bad company': {
+        albums: {
+            'bad company': {
+                year: 1974,
+                members: {
+                    vocals: 'Paul Rogers',
+                    bass: 'Boz Burrell',
+                    guitar: 'Mick Ralphs',
+                    drums: 'Simon Kirke'
+
+                },
+                tracks: {
+                    1: "Can't Get Enough",
+                    2: "Rock Steady",
+                    3: "Ready For Love",
+                    4: "Don't Let Me Down",
+                    5: "Bad Company",
+                    6: "The Way I Choose",
+                    7: "Movin On",
+                    8: "Seagull"
+                }
+            },
+            'straight shooter': {
+                year: 1974,
+                members: {
+                    vocals: 'Paul Rogers',
+                    bass: 'Boz Burrell',
+                    guitar: 'Mick Ralphs',
+                    drums: 'Simon Kirke'
+
+                },
+                tracks: {
+                    1: "Good Lovin Gone Bad",
+                    2: "Feel Like Makin Love",
+                    3: "Weep No More",
+                    4: "Shooting Star",
+                    5: "Deal With The Preacher",
+                    6: "Wild Fire Woman",
+                    7: "Anna",
+                    8: "Call On Me"
+                }
+            },
+        },
+    },
+
+    //Deep Purple Object
+    'deep purple': {
+        albums: {
+            'come taste the band': {
+                year: 1975,
+                members: {
+                    vocals: 'David Coverdale',
+                    bass: 'Glenn Hughes', 
+                    guitar: 'Tommy Bolin', 
+                    keyboard: 'Jon Lord',
+                    drums: 'Ian Paice',
+                    },
+                    tracks: {
+                    1: 'Comin\' Home',
+                    2: 'Lady Luck',
+                    3: 'Gettin\' Tighter',
+                    4: 'Dealer',
+                    5: "I Need Love",
+                    6: 'Drifter',
+                    7: "Love Child",
+                    8: 'This Time Around / Owed to G',
+                    9: 'You Keep on Moving'
+                }
+            },
+        }
+    },
+
     // Eagle Object
     eagles: {
         albums: {
@@ -358,7 +431,7 @@ const music = {
             },
 
         },
-},
+    },
 
     // Thin Lizzy Object
     'thin lizzy': {
@@ -550,21 +623,6 @@ const music = {
         }
     },
 
-    // NOTE: Below is the basic template used in this project
-    artist: {
-            albums: {
-                albumTitle: {
-                    year: 0,
-                    members: {
-                        vocals: '',
-                        bass: '', 
-                        guitar: '', 
-                        drums: '',
-                    },
-                    tracks: {}
-                    }
-                },
-    },
         // function to get information on an Album
         data(bandName, album) {
             let key = ''
@@ -641,28 +699,37 @@ const music = {
 
 // function myFunction takes input from form assigns to variables bandName and album, then invokes data function
 const myFunction = () => {
-    let contents = []
-      let data = document.getElementById("frm1");
-      for (i = 0; i < data.length ;i++) {
-          contents.push(data.elements[i].value)
-      }
-      bandName = contents[0].toLowerCase();
-      album = contents[1].toLowerCase();
-      music.data(bandName, album)
-      document.getElementById("frm1").reset();
-    }
-
-    // function to print out albums a band made
-    const albums =() => {
+    try {
         let contents = []
-        let data = document.getElementById("frm2");
+        let data = document.getElementById("frm1");
         for (i = 0; i < data.length ;i++) {
             contents.push(data.elements[i].value)
         }
         bandName = contents[0].toLowerCase();
-        //invoke whichAlbums function
-        music.whichAlbums(bandName);
-        document.getElementById("frm2").reset();
+        album = contents[1].toLowerCase();
+        music.data(bandName, album)
+        document.getElementById("frm1").reset();
+    } catch (error) {
+        document.getElementById('error').innerHTML = `ERROR!!!! in myFunction ${error}`
+    }
+    }
+
+    // function to print out albums a band made
+    const albums =() => {
+        try {
+            let contents = []
+            let data = document.getElementById("frm2");
+            for (i = 0; i < data.length ;i++) {
+                contents.push(data.elements[i].value)
+            }
+            bandName = contents[0].toLowerCase();
+            //invoke whichAlbums function
+            music.whichAlbums(bandName);
+            document.getElementById("frm2").reset();
+        } catch (error) {
+            document.getElementById('error').innerHTML = `ERROR!!!! albums function ${error}`
+
+        }
     }
 
 
