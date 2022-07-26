@@ -86,6 +86,7 @@ for (let i = 0; i < myMusic.length; i++) {
     //document.write(value)
   }
 }
+// create a link to home at the bottom of the page
 const home =  '<a href="../index.html" id="home-link">Home</a>';
 const para = document.createElement('p');
 para.innerHTML = home;

@@ -555,7 +555,10 @@ const music = {
                     document.getElementById(key).innerHTML = `${result[i]}`
                 }   
                 } catch (error) {
-                    document.getElementById('error').innerHTML = `ERROR!!!! Check Band Name "${bandName}" and Album title "${album}" are correct.`
+                    document.getElementById('error').innerHTML = `ERROR!!!!`
+                    document.getElementById('demo0').innerHTML = `Check "Band Name" and "Album Name"`
+                    document.getElementById('demo1').innerHTML = `Name of band = (${bandName}) ?`
+                    document.getElementById('demo2').innerHTML = `Name of album = (${album}) ?`
                 }
             },
 
@@ -579,7 +582,11 @@ const music = {
                         document.getElementById(key).innerHTML = `${results[i]}`
                     } 
                 } catch (error) {
-                    document.getElementById('error').innerHTML = `ERROR!!!! Check Band Name "${bandName}" is correct.`
+                    document.getElementById('error').innerHTML = `ERROR!!!!`
+                    document.getElementById('demo0').innerHTML = `Check "Band Name"`
+                    document.getElementById('demo1').innerHTML = `Name of band = (${bandName}) ?`
+
+
 
                 }
             }

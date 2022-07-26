@@ -9,21 +9,27 @@
     <title>music albums data</title>
 </head>
 <body>
-    <h1>Music Album Data</h1>
-    <h2>For My Music Collection <a id="my-music" href="./my_music_collection/index.html">Click Me</a></h2>
-    <h2>Get Which Albums A Band Made</h2>
-    <form id="frm2" action="#">
-      Band <input id="album-finder" type="text" name='album-finder' placeholder="Name of band" required >
-      <input id="myBtn1" type="button" onclick="albums()" value="Submit">
-    </form>
-    <h2>Get Information on an Album</h2>
-    <form id="frm1" action="#">
-        Band: <input id="band-name" type="text" name="band-name" placeholder="Name of band" required><br>
-        Album: <input id="album" type="text" name="album" placeholder="Name of album" required><br><br>
-        <input id="myBtn" type="button" onclick="myFunction()" value="Submit">
+  <header>
+    <h1><h1>My Music Database</h1>
+  </h1>
+  </header>
+  <div class="main">
+    <fieldset id="input">
+      <h2>For My Music Collection <a id="my-music" href="./my_music_collection/index.html">Click Me</a></h2>
+      <h2>Get Which Albums A Band Made</h2>
+      <form id="frm2" action="#">
+        Band <input id="album-finder" type="text" name='album-finder' placeholder="Name of band" required >
+        <input id="myBtn1" type="button" onclick="albums()" value="Submit">
       </form>
-
-    <fieldset>
+      <h2>Get Information on an Album</h2>
+      <form id="frm1" action="#">
+          Band: <input id="band-name" type="text" name="band-name" placeholder="Name of band" required><br>
+          Album: <input id="album" type="text" name="album" placeholder="Name of album" required>
+          <input id="myBtn" type="button" onclick="myFunction()" value="Submit">
+        </form>
+    </fieldset>
+  
+    <fieldset id="album-output">
         <h2 id='error'></h2>
         <h2 id='demo0'></h2>
         <p id="demo1"></p>
@@ -47,6 +53,8 @@
         <p id="demo19"></p>
         <p id="demo20"></p>
     </fieldset>
+  </div>
+
     <script src="./app.js"></script>
 </body>
 </html>
