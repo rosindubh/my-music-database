@@ -1,0 +1,76 @@
+/*phil welsby - 25 july 2022*/
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    margin-left: 10px;
+}
+
+#band-name {
+    margin-left: 20px;
+}
+
+#album {
+    margin-top: 10px;
+}
+
+#myBtn {
+    margin: 0px 0px 30px 100px;
+}
+
+#myBtn1 {
+    margin: 30px 0px 30px 100px;
+}
+
+input {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+h2 {
+    margin: 0px 0px 20px 10px;
+    font-size: 30px;
+    color: green;
+}
+
+p {
+    margin: 5px 0px 0px 10px;
+    font-size: 20px;
+}
+ p:last-of-type {
+     padding-bottom: 10px;
+ }
+
+fieldset {
+    max-width: 50%;
+    min-width: 50%;
+    border: solid black 3px;
+    padding: 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+
+#home-link {
+    text-decoration: none;
+}
+
+button {
+    margin: 50px 50px 0 10px;
+    border-radius: 5px;
+} 
+
+#my-music {
+    text-decoration: none;
+}
+
