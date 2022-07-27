@@ -71,10 +71,27 @@ const myMusic = [
   yes = ['YES', 'Yesterdays', 'Going for the One', ''],
 ]
 
-
 // function to itterate through nested arrays
 const listAlbums = () => {
+  for (i=0; i < myMusic.length; i++) {
+    for (j=0; j < myMusic[i].length; j++) {
+      const value = myMusic[i][j];
+      const para = document.createElement('p');
+      para.innerHTML = value;
+      document.getElementById('myDIV').appendChild(para);
+    }
+  }
+// create a link to home at the bottom of the page
+//const home = '<button onclick="document.location=(\"../index.html\")">Home</button>'
 
+const home =  '<a href="../index.html" id="home-link">Click to go home</a>';
+const para = document.createElement('p');
+para.innerHTML = home;
+document.getElementById('myDIV').appendChild(para);
+}
+
+// function to itterate through nested arrays
+/* const listAlbums = () => {
 for (let i = 0; i < myMusic.length; i++) {
   const nestedArray = myMusic[i];
   for (j = 0; j < nestedArray.length; j++) {
@@ -82,8 +99,6 @@ for (let i = 0; i < myMusic.length; i++) {
     const para = document.createElement('p');
     para.innerHTML = value;
     document.getElementById('myDIV').appendChild(para);
-    //console.log(value)
-    //document.write(value)
   }
 }
 // create a link to home at the bottom of the page
@@ -91,10 +106,9 @@ const home =  '<a href="../index.html" id="home-link">Home</a>';
 const para = document.createElement('p');
 para.innerHTML = home;
 document.getElementById('myDIV').appendChild(para);
+}; */
 
-};
 
-//listAlbums();
 
 
 

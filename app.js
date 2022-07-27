@@ -149,8 +149,93 @@ const music = {
                     9: 'You Keep on Moving'
                 }
             },
+            'made in japan': {
+                year: 1972,
+                members: {
+                    vocals: 'Ian Gillan',
+                    bass: 'Roger Glover', 
+                    guitar: 'Ritchie Blackmoore', 
+                    keyboard: 'Jon Lord',
+                    drums: 'Ian Paice',
+                    },
+                    tracks: {
+                    1: 'Highway Star',
+                    2: 'Child in Time',
+                    3: 'Smoke on the Water',
+                    4: 'The Mule',
+                    5: "Strange Kind of Woman",
+                    6: 'Lazy',
+                    7: "Space Truckin"          
+                }
+            },
+            'made in europe': {
+                year: 1975,
+                members: {
+                    vocals: 'David Coverdale',
+                    bass: 'Glenn Hughes', 
+                    guitar: 'Ritchie Blackmoore', 
+                    keyboard: 'Jon Lord',
+                    drums: 'Ian Paice',
+                    },
+                    tracks: {
+                    1: 'Burn',
+                    2: 'Mistreated',
+                    3: 'Lady Double Dealer',
+                    4: 'You Fool No One',
+                    5: "Stormbringer"
+                }
+            },
         }
     },
+
+    // Dire Staits Object
+    'dire straits': {
+        albums: {
+            'making movies': {
+                year: 1980,
+                members: {
+                    vocals: 'Mark Knopfler',
+                    bass: 'John Illsey', 
+                    guitar: 'Mark Knopfler', 
+                    keyboard: 'Roy Bittan',
+                    drums: 'Pick Withers',
+                    },
+                    tracks: {
+                    1: 'Tunnel of Love',
+                    2: 'Romeo and Juliet',
+                    3: 'Skateaway',
+                    4: 'Expresso Love',
+                    5: "Hand in Hand",
+                    6: 'Solid Rock',
+                    7: "Les Boys"
+                }
+            },
+            'brothers in arms': {
+                year: 1985,
+                members: {
+                    vocals: 'Mark Knopfler',
+                    bass: 'John Illsley', 
+                    guitar: 'Mark Knopfler', 
+                    keyboard: 'Guy Fletcher',
+                    drums: 'Omar Hakim',
+                    },
+                    tracks: {
+                    1: 'So Far Away',
+                    2: 'Money for Nothing',
+                    3: 'Walk of Life',
+                    4: 'Your Latest Trick',
+                    5: "Why Worry",
+                    6: 'Ride Across the River',
+                    7: "The man's too Strong",
+                    8: "One World",
+                    9: "Brothers in Arms"
+                }
+            },
+
+        }
+    },
+
+    // Dr Dre Object
 
     // Eagle Object
     eagles: {
