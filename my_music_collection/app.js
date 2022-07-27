@@ -80,6 +80,11 @@ const listAlbums = () => {
       para.innerHTML = value;
       document.getElementById('myDIV').appendChild(para);
     }
+    //added
+    const value = '<br>'
+    const para = document.createElement('p')
+    para.innerHTML = value
+    document.getElementById('myDIV').appendChild(para);
   }
 // create a link to home at the bottom of the page
 //const home = '<button onclick="document.location=(\"../index.html\")">Home</button>'
