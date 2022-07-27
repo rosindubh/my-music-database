@@ -1,145 +1,142 @@
 /*phil welsby - 25 july 2022*/
-*{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    font-size: 30px;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-size: 30px;
 }
 
 h1 {
-    font-size: 1.5em;
-    text-align: center;
-    margin-top: 20px;
-    color: rgb(82, 58, 219);
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(82, 58, 219);
 }
 
 .main {
-    display: flex;
+  display: flex;
 }
 
 body {
-    background-color: bisque;
+  background-color: bisque;
 }
 
 form {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 #myBtn {
-    margin: 0px 0 0 20px;
-    padding: 0px 5px 0px 2px;
-    height: 30px
+  margin: 0px 0 0 20px;
+  padding: 0px 5px 0px 2px;
+  height: 30px;
 }
 
 #myBtn1 {
-    margin: 0px 0px 30px 10px;
-    padding: 3px 5px 0 5px;
+  margin: 0px 0px 30px 10px;
+  padding: 3px 5px 0 5px;
 }
 
 input {
-    border-radius: 5px;
-    font-size: 20px;
+  border-radius: 5px;
+  font-size: 20px;
 }
 
 h2 {
-    margin: 40px 0px 0px 10px;
-    font-size: 1em;
-    color: green;
+  margin: 40px 0px 0px 10px;
+  font-size: 1em;
+  color: green;
 }
 
 p {
-    /*margin: 5px 0px 0px 73px;*/
-    font-size: 17px;
+  /*margin: 5px 0px 0px 73px;*/
+  font-size: 17px;
 }
- p:last-of-type {
-     padding-bottom: 10px;
- }
+p:last-of-type {
+  padding-bottom: 10px;
+}
 
 fieldset {
-/*  border: solid black 3px;*/    
-    border: none;
-    padding: 0px 0px 0px 20px ;
-    margin-left: 30px;
-    border-radius: 5px;
-    
+  /*  border: solid black 3px;*/
+  border: none;
+  padding: 0px 0px 0px 20px;
+  margin-left: 30px;
+  border-radius: 5px;
 }
 
 #home-link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 button {
-    margin: 0px 50px 0 0px;
-    border-radius: 5px;
-    font-size: 20px;
-    padding: 3px 5px 0 5px;
-} 
-
-#my-music {
-    text-decoration: none;
+  margin: 0px 50px 0 0px;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 3px 5px 0 5px;
 }
 
+#my-music {
+  text-decoration: none;
+}
 
 #input {
-    width: 50%;
+  width: 50%;
 }
 
 #album-output {
-    background-color: white;
-    margin-top: 40px;
-    width: 40%;
-    border: black solid;
-    display: flex;
-    flex-direction: column;
-    
+  background-color: white;
+  margin-top: 40px;
+  width: 40%;
+  border: black solid;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 p:last-of-type {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 #demo0 {
-    text-align: center;
+  text-align: center;
 }
 
 #demo1 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 #frm1 {
-    display: flex;
+  display: flex;
 }
 
 #list-albums {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 #click-me {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 #band-name {
-    height: 30px;
-    margin-right: 20px;
+  height: 30px;
+  margin-right: 20px;
 }
 
 #album {
-    height: 30px
+  height: 30px;
 }
 
 #myDIV {
-    padding: 30px 20px 0 20px;
-    margin: 30px 0 0 20px;
-    background-color: white;
-    width: 20%;
-    border: solid black 3px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+  padding: 30px 20px 0 20px;
+  margin: 30px 0 0 20px;
+  background-color: white;
+  width: 20%;
+  border: solid black 3px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 p:last-of-type {
-    margin-top: 20px;
+  margin-top: 20px;
 }

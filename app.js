@@ -373,98 +373,156 @@ const music = {
   // Feeder Object
   feeder: {
     albums: {
-      "echo park": {
-        year: 0,
+      polythene: {
+        year: 1997,
         members: {
-          vocals: "",
-          bass: "",
-          guitar: "",
-          keyboard: "",
-          drums: "",
+          vocals: "Grant Nicholas",
+          bass: "Taka Hirose",
+          guitar: "Grant Nicholas",
+          drums: "Jon Lee",
         },
         tracks: {
-          1: "",
-          2: "",
-          3: "",
-          4: "",
-          5: "",
-          6: "",
-          7: "",
-          8: "",
-          9: "",
-          10: "",
+          1: "Polythene Girl",
+          2: "My Perfect Day",
+          3: "Cement",
+          4: "High",
+          5: "Crash",
+          6: "Radiation",
+          7: "Suffocate",
+          8: "Descend",
+          9: "Stereo World",
+          10: "Change",
+          11: "Tangarine",
+          12: "Forgive",
+          13: "20th Century Trip",
         },
       },
-      polythene: {
-        year: 0,
+      "echo park": {
+        year: 2001,
         members: {
-          vocals: "",
-          bass: "",
-          guitar: "",
-          keyboard: "",
-          drums: "",
+          vocals: "Grant Nicholas",
+          bass: "Taka Hirose",
+          guitar: "Grant Nicholas",
+          drums: "Jon Henry Lee",
         },
         tracks: {
-          1: "",
-          2: "",
-          3: "",
-          4: "",
-          5: "",
-          6: "",
-          7: "",
-          8: "",
-          9: "",
-          10: "",
+          1: "Standing on the Edge",
+          2: "Buck Rogers",
+          3: "Piece by Piece",
+          4: "Seven Days in the Sun",
+          5: "We Can't Rewind",
+          6: "Turn",
+          7: "Choke",
+          8: "Oxygen",
+          9: "Tell All Your Friends",
+          10: "Under the Weather",
+          11: "Satallite News",
+          12: "Bug",
         },
       },
     },
   },
-
+  // Fleetwood Mac Object
+  "fleetwood mac": {
+    albums: {
+      rumours: {
+        year: 1977,
+        members: {
+          vocals: ["Lindsey Buckingham", "Stevie Nicks", "Christine McVie"],
+          bass: "John McVie",
+          guitar: "Lindsey Buckingham",
+          keyboard: "Christine McVie",
+          drums: "Mick Fleetwood",
+        },
+        tracks: {
+          1: "Second Hand News",
+          2: "Dreams",
+          3: "Never Going Back",
+          4: "Don't Stop",
+          5: "Go Your Own Way",
+          6: "Songbird",
+          7: "The Chain",
+          8: "You Make Loving Fun",
+          9: "I Don't Want to Know",
+          10: "Oh Daddy",
+          11: "Gold Dust Woman",
+        },
+      },
+      "tango in the night": {
+        year: 1987,
+        members: {
+          vocals: ["Lindsey Buckingham", "Stevie Nicks", "Christine McVie"],
+          bass: "John McVie",
+          guitar: "Lindsey Buckingham",
+          keyboard: "Christine McVie",
+          drums: "Mick Fleetwood",
+        },
+        tracks: {
+          1: "Big Love",
+          2: "Seven Wonders",
+          3: "Everywhere",
+          4: "Caroline",
+          5: "Tango in the Night",
+          6: "Mystified",
+          7: "Little Lies",
+          8: "Family Man",
+          9: "Welcome to the Room... Sara",
+          10: "Isn't it Midnight",
+          11: "When I See You Again",
+          12: "You and I, PartII",
+        },
+      },
+    },
+  },
   // Foreigner Object
   foreigner: {
     albums: {
       foreigner: {
-        year: 0,
+        year: 1977,
         members: {
-          vocals: "",
-          bass: "",
-          guitar: "",
-          keyboard: "",
-          drums: "",
+          vocals: "Lou Gramm",
+          bass: "Ed Gagliardi",
+          guitar: ["Mick Jones", "Ian McDonald"],
+          keyboard: ["Mick Jones", "Ian McDonald", "Al Greenwood"],
+          drums: "Dennis Elliot",
         },
         tracks: {
-          1: "",
-          2: "",
-          3: "",
-          4: "",
-          5: "",
-          6: "",
-          7: "",
-          8: "",
-          9: "",
-          10: "",
+          1: "Feels Like the First Time",
+          2: "Cold as Ice",
+          3: "Starrider",
+          4: "HeadKnocker",
+          5: "The Damage is Done",
+          6: "Long, Long Way From Home",
+          7: "Whoman Oh Woman",
+          8: "At War With The World",
+          9: "Fool For You Anyway",
+          10: "I Need You",
+          11: "Feel Like the First Time (demo)",
+          12: "Woman Oh Woman (Demo)",
+          13: "At War with the World (Demo)",
+          14: "Take Me to Your Leader (Demo)",
         },
       },
       "double vision": {
-        year: 0,
+        year: 1978,
         members: {
-          vocals: "",
-          bass: "",
-          guitar: "",
-          keyboard: "",
-          drums: "",
+          vocals: "Lou Gramm",
+          bass: "Ed Gagliardi",
+          guitar: ["Mick Jones", "Ian McDonald"],
+          keyboard: "Al Greenwood",
+          drums: "Dennis Elliot",
         },
         tracks: {
-          1: "",
-          2: "",
-          3: "",
-          4: "",
-          5: "",
-          6: "",
-          7: "",
-          8: "",
-          9: "",
-          10: "",
+          1: "Hot Blooded",
+          2: "Blue Morning, Blue Day",
+          3: "You're All I Am",
+          4: "Back Where You Belong",
+          5: "Love Has Taken It's Toll",
+          6: "Double Vision",
+          7: "Tramontane (Instrumental)",
+          8: "I Have Waited So Long",
+          9: "Lonely Children",
+          10: "Spellbinder",
         },
       },
     },
@@ -968,7 +1026,9 @@ const music = {
         document.getElementById(key).innerHTML = `${result[i]}`;
       }
     } catch (error) {
-      document.getElementById("error").innerHTML = `ERROR!!!!`;
+      document.getElementById(
+        "error"
+      ).innerHTML = `ERROR!!!! Error 404 Status Not Found`;
       document.getElementById(
         "demo0"
       ).innerHTML = `Check "Band Name" and "Album Name"`;
@@ -1001,7 +1061,9 @@ const music = {
         document.getElementById(key).innerHTML = `${results[i]}`;
       }
     } catch (error) {
-      document.getElementById("error").innerHTML = `ERROR!!!!`;
+      document.getElementById(
+        "error"
+      ).innerHTML = `ERROR!!!! Status 404 Not Found`;
       document.getElementById("demo0").innerHTML = `Check "Band Name"`;
       document.getElementById(
         "demo1"
@@ -1044,6 +1106,6 @@ const albums = () => {
   } catch (error) {
     document.getElementById(
       "error"
-    ).innerHTML = `ERROR!!!! albums function ${error}`;
+    ).innerHTML = `ERROR!!!! in albums function ${error}`;
   }
 };

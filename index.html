@@ -1,40 +1,68 @@
 <!--phil welsby - 25 july 2022-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>music albums data</title>
-</head>
-<body>
-  <header>
-    <h1><h1>My Music Database</h1>
-  </h1>
-  </header>
-  <div class="main">
-    <fieldset id="input">
-<!--       <h2>For My Music Collection <a id="my-music" href="./my_music_collection/index.html">Click Me</a></h2>-->
-        <h2>My Music Collection <button id="click-me" onclick="document.location='./my_music_collection/index.html'">Click Me</button>
-
-      </h2>
-      <h2>Get Which Albums A Band Made</h2>
-      <form id="frm2" action="#">
-        <input id="album-finder" type="text" name='album-finder' placeholder="Name of band" required >
-        <input id="myBtn1" type="button" onclick="albums()" value="Submit">
-      </form>
-      <h2>Get Information on an Album</h2>
-      <form id="frm1" action="#">
-        <input id="band-name" type="text" name="band-name" placeholder="Name of band" required><br>
-        <input id="album" type="text" name="album" placeholder="Name of album" required>
-          <input id="myBtn" type="button" onclick="myFunction()" value="Submit">
+  </head>
+  <body>
+    <header>
+      <h1><h1>My Music Database</h1></h1>
+    </header>
+    <div class="main">
+      <fieldset id="input">
+        <!--       <h2>For My Music Collection <a id="my-music" href="./my_music_collection/index.html">Click Me</a></h2>-->
+        <h2>
+          My Music Collection
+          <button
+            id="click-me"
+            onclick="document.location='./my_music_collection/index.html'"
+          >
+            Click Me
+          </button>
+        </h2>
+        <h2>Get Which Albums A Band Made</h2>
+        <form id="frm2" action="#">
+          <input
+            id="album-finder"
+            type="text"
+            name="album-finder"
+            placeholder="Name of band"
+            required
+          />
+          <input id="myBtn1" type="button" onclick="albums()" value="Submit" />
         </form>
-    </fieldset>
-  
-    <fieldset id="album-output">
-        <h2 id='error'></h2>
-        <h2 id='demo0'>Welcome</h2>
+        <h2>Get Information on an Album</h2>
+        <form id="frm1" action="#">
+          <input
+            id="band-name"
+            type="text"
+            name="band-name"
+            placeholder="Name of band"
+            required
+          /><br />
+          <input
+            id="album"
+            type="text"
+            name="album"
+            placeholder="Name of album"
+            required
+          />
+          <input
+            id="myBtn"
+            type="button"
+            onclick="myFunction()"
+            value="Submit"
+          />
+        </form>
+      </fieldset>
+
+      <fieldset id="album-output">
+        <h2 id="error"></h2>
+        <h2 id="demo0">Welcome</h2>
         <p id="demo1"></p>
         <p id="demo2"></p>
         <p id="demo3"></p>
@@ -67,12 +95,9 @@
         <p id="demo30"></p>
         <p id="demo31"></p>
         <p id="demo32"></p>
-
-        
-
-    </fieldset>
-  </div>
+      </fieldset>
+    </div>
 
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>
