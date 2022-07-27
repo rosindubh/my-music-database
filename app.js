@@ -45,7 +45,7 @@ const music = {
                 },
                 tracks: {
                     /*DISK 1*/
-                    1: 'We Die  (from Facelift)',
+                    1: 'We Die Young  (from Facelift)',
                     2: 'Man in the Box (from Facelift)',
                     3: 'Sea of Sorrow (from Facelift)',
                     4: 'Love, Hate, Love (from Facelift)',

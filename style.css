@@ -7,9 +7,10 @@
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
     margin-top: 20px;
+    color: goldenrod;
 }
 
 .main {
@@ -22,36 +23,31 @@ form {
     margin-left: 10px;
 }
 
-#band-name {
-    margin-left: 20px;
-}
-
-#album {
-    margin-top: 10px;
-}
-
 #myBtn {
-    margin: 0px 0px 30px 20px;
+    margin: 0px 0 0 20px;
+    padding: 0px 5px 0px 2px;
+    height: 30px
 }
 
 #myBtn1 {
-    margin: 0px 0px 30px 20px;
+    margin: 0px 0px 30px 10px;
+    padding: 3px 5px 0 5px;
 }
 
 input {
     border-radius: 5px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 h2 {
     margin: 40px 0px 0px 10px;
-    font-size: 30px;
+    font-size: 1em;
     color: green;
 }
 
 p {
     margin: 5px 0px 0px 73px;
-    font-size: 20px;
+    font-size: 17px;
 }
  p:last-of-type {
      padding-bottom: 10px;
@@ -63,6 +59,7 @@ fieldset {
     padding: 0px 0px 0px 20px ;
     margin-left: 30px;
     border-radius: 5px;
+    
 }
 
 #home-link {
@@ -70,8 +67,10 @@ fieldset {
 }
 
 button {
-    margin: 50px 50px 0 10px;
+    margin: 0px 50px 0 0px;
     border-radius: 5px;
+    font-size: 20px;
+    padding: 3px 5px 0 5px;
 } 
 
 #my-music {
@@ -84,9 +83,13 @@ button {
 }
 
 #album-output {
+    
     margin-top: 40px;
     width: 40%;
     border: black solid;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 p:last-of-type {
@@ -99,4 +102,25 @@ p:last-of-type {
 
 #demo1 {
     margin-top: 20px;
+}
+
+#frm1 {
+    display: flex;
+}
+
+#list-albums {
+    margin-left: 20px;
+}
+
+#click-me {
+    margin-left: 10px;
+}
+
+#band-name {
+    height: 30px;
+    margin-right: 20px;
+}
+
+#album {
+    height: 30px
 }
