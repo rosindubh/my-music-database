@@ -704,65 +704,67 @@ const music = {
   },
 
   // Guns N Roses Object
-  "appitite for destruction": {
+  "guns n roses": {
     albums: {
-      "": {
-        year: 0,
+      "appitite for destruction": {
+        year: 1987,
         members: {
-          vocals: "",
-          bass: "",
-          guitar: "",
-          keyboard: "",
-          drums: "",
+          vocals: "W. Axl Rose",
+          bass: "Duff McKagan",
+          guitar: ["Slash", " Izzy Stradlin"],
+          keyboard: "W. Axl Rose",
+          drums: "Steven Adler",
         },
         tracks: {
-          1: "",
-          2: "",
-          3: "",
-          4: "",
-          5: "",
-          6: "",
-          7: "",
-          8: "",
-          9: "",
-          10: "",
+          1: "Welcome to the Jungle",
+          2: "It's so Easy",
+          3: "Nightrain",
+          4: "Out ta Get Me",
+          5: "Mr Brownstone",
+          6: "Paradise City",
+          7: "My Michelle",
+          8: "Think About You",
+          9: "Sweet Child 'o Mine",
+          10: "You're Crazy",
+          11: "Anything Goes (Guns N' Roses, Chris Weber",
+          12: "Rochet Queen"
         },
       },
     },
   },
 
   // Heart Object
-  "dreamboat annie": {
+  heart: {
     albums: {
-      "": {
-        year: 0,
+      "dreamboat annie": {
+        year: 1975,
         members: {
-          vocals: "",
-          bass: "",
-          guitar: "",
-          keyboard: "",
-          drums: "",
+          vocals: "Ann Wilson",
+          bass: "Steve Fossen",
+          guitar: ["Roger Fisher", " Howard Leese"],
+          keyboard: "Howard Leese",
+          drums: "Mike Derosier",
         },
         tracks: {
-          1: "",
-          2: "",
-          3: "",
-          4: "",
-          5: "",
-          6: "",
-          7: "",
-          8: "",
-          9: "",
-          10: "",
+          1: "Magic Man",
+          2: "Dreamboat Annie (Fantasy Child)",
+          3: "Crazy on You",
+          4: "Soul of the Sea",
+          5: "Dreamboat Annie",
+          6: "White Lightning and Wine",
+          7: "(Love me Like Music) I'll Be Your Song",
+          8: "Sing Child",
+          9: "How Deep it Goes",
+          10: "Dreamboat Annie (Reprise)",
         },
       },
     },
   },
 
-  // Jackson BrownObject
-  "saturate before using": {
+  // Jackson Brown Object
+  "jackson brown": {
     albums: {
-      "": {
+      "saturate before using": {
         year: 0,
         members: {
           vocals: "",
@@ -1352,3 +1354,11 @@ const albums = () => {
     ).innerHTML = `ERROR!!!! in albums function ${error}`;
   }
 };
+
+
+// Display all tracks from an album to console
+
+/* let allAlbums = Object.values(music["thin lizzy"].albums["thunder and lightening"].tracks);
+for (i = 0; i < allAlbums.length; i++) {
+    console.log(allAlbums[i]);
+} */

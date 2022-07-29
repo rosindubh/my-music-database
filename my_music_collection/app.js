@@ -185,7 +185,7 @@ const listArtistsAndAlbums = () => {
     for (j = 0; j < myMusic[i].length; j++) {
       const value = myMusic[i][j];
       const para = document.createElement("p");
-      para.innerHTML = value;
+      para.innerHTML = value.toLocaleUpperCase();
       document.getElementById("myDIV").appendChild(para);
     }
     //add line break after each artist's output
@@ -219,8 +219,9 @@ const listArtists = () => {
     for (i = 0; i < myMusic.length; i++) {
         const value = myMusic[i][1];
         const para = document.createElement("p");
-        para.innerHTML = value;
+        para.innerHTML = value.toLocaleUpperCase();
         document.getElementById("myDIV3").appendChild(para);
+
     }
       //add line break after each artist's output
       const value = "<br>";
@@ -234,5 +235,17 @@ const listArtists = () => {
   para.innerHTML = home;
   document.getElementById("myDIV").appendChild(para); */
 
-  console.log(myMusic[1][1]);
+// list all albums to console
+/* const listAlbums = () => {
+  Albums = Object.values(myMusic)
+  for (i = 1; i < Albums.length; i++) {
+    const value = Albums[i][i]
+    const para = document.createElement("p");
+    para.innerHTML = value;
+    document.getElementById("myDIV3").appendChild(para);
+    console.log(Albums[i][0]);
+  }
+}
 
+ans = Object.values(myMusic);
+console.log(ans[0][1]); */
