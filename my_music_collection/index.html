@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
-    <h1>My Music Collection</h1>
+    <h1 id="heading">My Music Collection</h1>
     <nav class="navbar">
-      <button id="list-albums" onclick="document.location=('../index.html')">
-        Home
-      </button>
-      <button onclick="listArtists()">List All Artists</button>
-      <button onclick="listAlbums()">List Albums</button>
-      <button onclick="listArtistsAndAlbums()">List All Artists and Albums</button>
-      <button id="list-albums" onclick="document.location=('./index.html')">
+      
+      <button id="list-artists" onclick="listArtists()">List All Artists</button>
+      <button id="list-albums" onclick="listAlbums()">List Albums</button>
+      <button id="list-artists-and-albums" onclick="listArtistsAndAlbums()">List All Artists and Albums</button>
+      <button id="refresh" onclick="document.location=('./index.html')">
         Refresh Page
       </button>
+      <button id="home" onclick="document.location=('../index.html')">
+        Home
+      </button>
     </nav>
-    <main class="main">
+    <main class="main" id=main>
       <div id="myDIV2"></div>
       <div id="myDIV3"></div>
 

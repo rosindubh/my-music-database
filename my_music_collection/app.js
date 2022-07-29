@@ -204,8 +204,8 @@ const listAlbums = () => {
     document.getElementById("myDIV3").appendChild(para);
   }
   // create a link to home at the bottom of the page
-  const home = '<a href="../index.html" id="home-link">Home</a>';
-  const para = document.createElement("p");
+  const home = '<a href="#heading">top of page</a>';
+  const para = document.createElement("a");
   para.innerHTML = home;
   document.getElementById("myDIV3").appendChild(para);
 };
@@ -226,8 +226,8 @@ const listArtistsAndAlbums = () => {
     document.getElementById("myDIV").appendChild(para);
   }
   // create a link to home at the bottom of the page
-  const home = '<a href="../index.html" id="home-link">Home</a>';
-  const para = document.createElement("p");
+  const home = '<a href="#heading">top of page</a>';
+  const para = document.createElement("a");
   para.innerHTML = home;
   document.getElementById("myDIV").appendChild(para);
 };

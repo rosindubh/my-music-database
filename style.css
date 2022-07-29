@@ -9,12 +9,12 @@
 h1 {
   font-size: 1.5em;
   text-align: center;
-  margin-top: 20px;
+  margin: 50px 0 50px 0;
   color: rgb(82, 58, 219);
 }
 
 .navbar {
-  height: 10vh;
+  height: 5vh;
 }
 
 .main {
@@ -112,9 +112,17 @@ p:last-of-type {
   display: flex;
 }
 
-#list-albums {
-  margin-left: 20px;
+ #list-artists {
+  margin: 0 0 0 20px;
 }
+
+#list-albums {
+  margin-left: 380px;
+}
+
+#list-artists-and-albums {
+  margin: 0 750px 0 330px;
+} 
 
 #click-me {
   margin-left: 10px;
@@ -169,4 +177,21 @@ p:last-of-type {
 }
 p:last-of-type {
   margin-top: 20px;
+}
+
+a:last-of-type {
+  margin-bottom: 30px;
+}
+
+/* .navbar button {
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  display: inline;
+} */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  display: inline;
 }
