@@ -9,13 +9,9 @@ const myMusic = [
     "ALICE COOPER",
     "Early Days",
     "Love it to Death",
-    "Killer",
     "School's out",
-    "Billion Dollar Babies",
-    "Muscle of Love",
+    "Killer",
     "Welcome to my Nightmare",
-    "Alice Cooper Goes to Hell",
-    "Lace and Whiskey",
     "",
   ]),
   (allAboutEve = ["ALL ABOUT EVE", "All About Eve", ""]),
@@ -31,12 +27,12 @@ const myMusic = [
   ]),
   (direStraits = ["DIRE STRAITS", "Making Movies", "Brothers In Arms", ""]),
   (donMcLean = ["DON McClean", "American Pie"]),
-  (drDre = ["Dr Dre", "Chronic", "2001", ""]),
+  (drDre = ["DrDRE", "Chronic", "2001", ""]),
   (eagles = [
     "EAGLES",
     "Eagles",
-    "Desperado",
     "On the Border",
+    "Desperado",
     "One of These Nights",
     "Hotel California",
     "The Long Run",
@@ -150,7 +146,7 @@ const myMusic = [
     "",
   ]),
   (thinLizzy = [
-    "THIN LIZZY",
+    "THINLIZZY",
     "Fighting",
     "Nightlife",
     "Jailbreak",
@@ -179,6 +175,41 @@ const myMusic = [
   (yes = ["YES", "Yesterdays", "Going for the One", ""]),
 ];
 
+const listArtists = () => {
+  for (i = 0; i < myMusic.length; i++) {
+    const value = myMusic[i][0];
+    const para = document.createElement("p");
+    para.innerHTML = value;
+    document.getElementById("myDIV2").appendChild(para);
+  }
+  //add line break after each artist's output
+  const value = "<br>";
+  const para = document.createElement("p");
+  para.innerHTML = value;
+  document.getElementById("myDIV2").appendChild(para);
+};
+
+const listAlbums = () => {
+  for (i = 0; i < myMusic.length; i++) {
+    for (j = 1; j < myMusic[i].length; j++) {
+      const subValue = myMusic[i][j];
+      const para = document.createElement("p");
+      para.innerHTML = subValue.toLocaleUpperCase();
+      document.getElementById("myDIV3").appendChild(para);
+    }
+    //add line break after each artist's output
+    const value = "<br>";
+    const para = document.createElement("p");
+    para.innerHTML = value;
+    document.getElementById("myDIV3").appendChild(para);
+  }
+  // create a link to home at the bottom of the page
+  const home = '<a href="../index.html" id="home-link">Home</a>';
+  const para = document.createElement("p");
+  para.innerHTML = home;
+  document.getElementById("myDIV3").appendChild(para);
+};
+
 // function to itterate through nested arrays
 const listArtistsAndAlbums = () => {
   for (i = 0; i < myMusic.length; i++) {
@@ -200,52 +231,8 @@ const listArtistsAndAlbums = () => {
   para.innerHTML = home;
   document.getElementById("myDIV").appendChild(para);
 };
-
-const listArtists = () => {
-  for (i = 0; i < myMusic.length; i++) {
-      const value = myMusic[i][0];
-      const para = document.createElement("p");
-      para.innerHTML = value;
-      document.getElementById("myDIV2").appendChild(para);
-  }
-    //add line break after each artist's output
-    const value = "<br>";
-    const para = document.createElement("p");
-    para.innerHTML = value;
-    document.getElementById("myDIV2").appendChild(para);
-  }
-
-  const listAlbums = () => {
-    for (i = 0; i < myMusic.length; i++) {
-        const value = myMusic[i][1];
-        const para = document.createElement("p");
-        para.innerHTML = value.toLocaleUpperCase();
-        document.getElementById("myDIV3").appendChild(para);
-
-    }
-      //add line break after each artist's output
-      const value = "<br>";
-      const para = document.createElement("p");
-      para.innerHTML = value;
-      document.getElementById("myDIV3").appendChild(para);
-    }
-  // create a link to home at the bottom of the page
+// create a link to home at the bottom of the page
 /*   const home = '<a href="../index.html" id="home-link">Home</a>';
   const para = document.createElement("p");
   para.innerHTML = home;
   document.getElementById("myDIV").appendChild(para); */
-
-// list all albums to console
-/* const listAlbums = () => {
-  Albums = Object.values(myMusic)
-  for (i = 1; i < Albums.length; i++) {
-    const value = Albums[i][i]
-    const para = document.createElement("p");
-    para.innerHTML = value;
-    document.getElementById("myDIV3").appendChild(para);
-    console.log(Albums[i][0]);
-  }
-}
-
-ans = Object.values(myMusic);
-console.log(ans[0][1]); */
