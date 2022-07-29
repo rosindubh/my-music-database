@@ -9,11 +9,27 @@
   </head>
   <body>
     <h1>My Music Collection</h1>
-    <button id="list-albums" onclick="document.location=('../index.html')">
-      Home
-    </button>
-    <button onclick="listAlbums()">List All Albums</button>
-    <div id="myDIV"></div>
+    <nav class="navbar">
+      <button id="list-albums" onclick="document.location=('../index.html')">
+        Home
+      </button>
+      <button onclick="listArtists()">List All Artists</button>
+      <button onclick="listAlbums()">List Albums</button>
+      <button onclick="listArtistsAndAlbums()">List All Artists and Albums</button>
+      <button id="list-albums" onclick="document.location=('./index.html')">
+        Refresh Page
+      </button>
+    </nav>
+    <main class="main">
+      <div id="myDIV2"></div>
+      <div id="myDIV3"></div>
+
+      <div id="myDIV"></div>
+
+
+    </main>
+
+
     <script src="./app.js"></script>
   </body>
 </html>

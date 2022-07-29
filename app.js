@@ -121,6 +121,35 @@ const music = {
     },
   },
 
+  // David Bowie Object
+  "david bowie": {
+    albums: {
+      "rise and fall of ziggy stardust and the spiders from mars": {
+        year: 1972,
+        members: {
+          vocals: "David Bowie",
+          bass: "Trevor Bolder",
+          guitar: "Mick Ronson",
+          saxaphone: "David Bowie",
+          Harpsicord: "Rick Wakeman",
+          drums: "Mick Woodmansey",
+        },
+        tracks: {
+          1: "Five Years",
+          2: "Soul Love",
+          3: "Moonage Daydream",
+          4: "Starman",
+          5: "It Ain't Easy",
+          6: "Lady Stardust",
+          7: "Star",
+          8: "Hang On to Yourself",
+          9: "Ziggy Stardust",
+          10: "Suffrajet City",
+          11: "Rock 'n' Roll Suicide",
+        },
+      },
+    },
+  },
   //Deep Purple Object
   "deep purple": {
     albums: {
@@ -532,6 +561,152 @@ const music = {
   "fun lovin criminals": {
     albums: {
       "come find yourself": {
+        year: 1996,
+        members: {
+          vocals: "Huey Morgan",
+          bass: "Brian Leiser",
+          guitar: "Huey Morgan",
+          keyboard: "Brian Leiser",
+          drums: "Steve Borgovini",
+        },
+        tracks: {
+          1: "Fun Lovin' Criminals",
+          2: "Passive/Agressive",
+          3: "The Grave and the Constant",
+          4: "Scooby Snacks",
+          5: "Smoke Em",
+          6: "Bomin' the L",
+          7: "I Can't Get with That",
+          8: "King of New York",
+          9: "We Have All The Time In The World (John Barry, Hal David)",
+          10: "Bear Hug",
+          11: "Come Find Yourself",
+          12: "Crime and Punishment",
+          13: "Methadonia",
+          14: "I Can't Get with That (Schmoove Version)",
+          15: "Coney Island Girl",
+        },
+      },
+    },
+  },
+
+  // G Force Object
+  "g force": {
+    albums: {
+      "g force": {
+        year: 0,
+        members: {
+          vocals: ["Gary Moore", " Willie Dee"],
+          bass: "Tony Newton",
+          guitar: "Gary Moore",
+          keyboard: ["Gary Moore", " Willie Dee"],
+          drums: "Mark Nauseef",
+        },
+        tracks: {
+          1: "You",
+          2: "White Knuckles / Rocckin' and Rollin'",
+          3: "Shes Got You",
+          4: "I Look at You",
+          5: "Because of Your Love",
+          6: "You Kissed me Sweetly",
+          7: "Hot Gossip",
+          8: "The Woman's in Love",
+          9: "Dancin",
+        },
+      },
+    },
+  },
+  // Gary Moore
+  "gary moore": {
+    albums: {
+      "back on the streets": {
+        year: 1978,
+        members: {
+          vocals: "Gary Moore",
+          bass: ["Phil Lynott", " John Mole"],
+          guitar: "Gary Moore",
+          keyboard: "Don Airey",
+          drums: ["Brian Downey", "Simon Phillips"],
+        },
+        tracks: {
+          1: "Back on the Streets",
+          2: "Don't Believe a Word",
+          3: "Fanatical Fascists",
+          4: "Flight of the Snow Moose (Instrumental)",
+          5: "Hurricane",
+          6: "Song for Donna",
+          7: "What Would You Rather Bee or a Wasp (Instrumental)",
+          8: "Parisienne Walkways",
+        },
+      },
+
+      "victims of the future": {
+        year: 1983,
+        members: {
+          vocals: ["Gary Moore", " Neil Carter"],
+          bass: ["Bob Daisley", " Mo Foster"],
+          guitar: "Gary Moore",
+          keyboard: "Neil Carter",
+          drums: ["Ian Paice", " Bobby 'Prime Time' Chouinard"],
+          "backing vocals": "Noddy Holder on 'Shapes of Things'",
+        },
+        tracks: {
+          1: "Victims of the Future",
+          2: "Teenage Idol",
+          3: "Shapes of Things",
+          4: "Empty Rooms",
+          5: "Murder in the Skies",
+          6: "Hold on to Love",
+          7: "Law of the Jungle",
+          8: "",
+          9: "",
+          10: "",
+        },
+      },
+      "still got the blues": {
+        year: 1990,
+        members: {
+          "Gary Moore": "lead vocals, lead and rhythm guitars",
+          "Don Airey": "keyboards",
+          "Stuart Brooks": "trumpet",
+          "Albert Collins": "guitar",
+          "Bob Daisley": "bass guitar",
+          "Raul d'Oliveira": "trumpet",
+          "Brian Downey": "drums",
+          "Martin Drover": "trumpet",
+          "George Harrison": "guitar, vocals",
+          "Nicky Hopkins": "keyboards",
+          "Albert King": "guitar",
+          "Frank Mead": "saxophone",
+          "Nick Payn": "saxophone",
+          "Nick Pentelow": "saxophone",
+          "Andy Pyle": "bass guitar",
+          "Graham Walker": "drums",
+          "Mick Weaver": "piano",
+          "Gavyn Wright": "strings",
+        },
+        tracks: {
+          1: "Moving On",
+          2: "Oh Pretty Woman",
+          3: "Walkin by Myself",
+          4: "Still Got The Blues (For You)",
+          5: "Texas Strut",
+          6: "Too Tired",
+          7: "King of the Blues",
+          8: "As the Years go Passing By",
+          9: "Midnight Blues",
+          10: "That Kind of Woman",
+          11: "All Your Love - Otis Rush",
+          12: "Stop Messin' Around (Clifford davis, Peter Green",
+        },
+      },
+    },
+  },
+
+  // Guns N Roses Object
+  "appitite for destruction": {
+    albums: {
+      "": {
         year: 0,
         members: {
           vocals: "",
@@ -556,10 +731,10 @@ const music = {
     },
   },
 
-  // Gary Moore
-  "gary moore": {
+  // Heart Object
+  "dreamboat annie": {
     albums: {
-      "back on the streets": {
+      "": {
         year: 0,
         members: {
           vocals: "",
@@ -581,7 +756,13 @@ const music = {
           10: "",
         },
       },
-      "victims of the future": {
+    },
+  },
+
+  // Jackson BrownObject
+  "saturate before using": {
+    albums: {
+      "": {
         year: 0,
         members: {
           vocals: "",
@@ -603,7 +784,69 @@ const music = {
           10: "",
         },
       },
-      "still got the blues": {
+    },
+  },
+
+  // Jethro Tull Object
+  "jethro tull": {
+    albums: {
+      aqualung: {
+        year: 0,
+        members: {
+          vocals: "",
+          bass: "",
+          guitar: "",
+          keyboard: "",
+          drums: "",
+        },
+        tracks: {
+          1: "",
+          2: "",
+          3: "",
+          4: "",
+          5: "",
+          6: "",
+          7: "",
+          8: "",
+          9: "",
+          10: "",
+        },
+      },
+    },
+  },
+
+  // Journey Object
+  journey: {
+    albums: {
+      escape: {
+        year: 0,
+        members: {
+          vocals: "",
+          bass: "",
+          guitar: "",
+          keyboard: "",
+          drums: "",
+        },
+        tracks: {
+          1: "",
+          2: "",
+          3: "",
+          4: "",
+          5: "",
+          6: "",
+          7: "",
+          8: "",
+          9: "",
+          10: "",
+        },
+      },
+    },
+  },
+
+  // Kate Bush Object
+  "kate bush": {
+    albums: {
+      "the kick inside": {
         year: 0,
         members: {
           vocals: "",
@@ -1023,7 +1266,7 @@ const music = {
       // itterate through result array and render to DOM
       for (i = 0; i < result.length; i++) {
         key = "demo" + i;
-        document.getElementById(key).innerHTML = `${result[i]}`;
+        document.getElementById(key).innerHTML = `${result[i].toLocaleUpperCase()}`;
       }
     } catch (error) {
       document.getElementById(
@@ -1058,7 +1301,7 @@ const music = {
       }
       for (i = 0; i < results.length; i++) {
         key = "demo" + i;
-        document.getElementById(key).innerHTML = `${results[i]}`;
+        document.getElementById(key).innerHTML = `${results[i].toLocaleUpperCase()}`;
       }
     } catch (error) {
       document.getElementById(

@@ -57,7 +57,7 @@ const myMusic = [
   ]),
   (gunsAndRoses = ["GUNS AND ROSES", "Appitite for Destruction", ""]),
   (heart = ["HEART", "Dreamboat Annie", ""]),
-  (jacksonBrown = ["Jackson Brown", "Saturate Before using", ""]),
+  (jacksonBrown = ["JACKSON BROWN", "Saturate Before using", ""]),
   (japan = ["JAPAN", "Qiuet Life", ""]),
   (jethrowTull = ["JETHROW TULL", "Aqualung", ""]),
   (jimmyHendrix = ["JIMMY HENDRIX", "Jimi Hendrix", "Midnight Lightning", ""]),
@@ -180,7 +180,7 @@ const myMusic = [
 ];
 
 // function to itterate through nested arrays
-const listAlbums = () => {
+const listArtistsAndAlbums = () => {
   for (i = 0; i < myMusic.length; i++) {
     for (j = 0; j < myMusic[i].length; j++) {
       const value = myMusic[i][j];
@@ -195,28 +195,44 @@ const listAlbums = () => {
     document.getElementById("myDIV").appendChild(para);
   }
   // create a link to home at the bottom of the page
-  //const home = '<button onclick="document.location=(\"../index.html\")">Home</button>'
-
   const home = '<a href="../index.html" id="home-link">Home</a>';
   const para = document.createElement("p");
   para.innerHTML = home;
   document.getElementById("myDIV").appendChild(para);
 };
 
-// function to itterate through nested arrays
-/* const listAlbums = () => {
-for (let i = 0; i < myMusic.length; i++) {
-  const nestedArray = myMusic[i];
-  for (j = 0; j < nestedArray.length; j++) {
-    const value = myMusic[i][j];
-    const para = document.createElement('p');
-    para.innerHTML = value;
-    document.getElementById('myDIV').appendChild(para);
+const listArtists = () => {
+  for (i = 0; i < myMusic.length; i++) {
+      const value = myMusic[i][0];
+      const para = document.createElement("p");
+      para.innerHTML = value;
+      document.getElementById("myDIV2").appendChild(para);
   }
-}
-// create a link to home at the bottom of the page
-const home =  '<a href="../index.html" id="home-link">Home</a>';
-const para = document.createElement('p');
-para.innerHTML = home;
-document.getElementById('myDIV').appendChild(para);
-}; */
+    //add line break after each artist's output
+    const value = "<br>";
+    const para = document.createElement("p");
+    para.innerHTML = value;
+    document.getElementById("myDIV2").appendChild(para);
+  }
+
+  const listAlbums = () => {
+    for (i = 0; i < myMusic.length; i++) {
+        const value = myMusic[i][1];
+        const para = document.createElement("p");
+        para.innerHTML = value;
+        document.getElementById("myDIV3").appendChild(para);
+    }
+      //add line break after each artist's output
+      const value = "<br>";
+      const para = document.createElement("p");
+      para.innerHTML = value;
+      document.getElementById("myDIV3").appendChild(para);
+    }
+  // create a link to home at the bottom of the page
+/*   const home = '<a href="../index.html" id="home-link">Home</a>';
+  const para = document.createElement("p");
+  para.innerHTML = home;
+  document.getElementById("myDIV").appendChild(para); */
+
+  console.log(myMusic[1][1]);
+
