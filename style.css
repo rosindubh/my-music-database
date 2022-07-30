@@ -13,6 +13,10 @@ h1 {
   color: rgb(82, 58, 219);
 }
 
+.home {
+  margin-left: 60px;
+}
+
 .navbar {
   height: 5vh;
 }
@@ -117,16 +121,16 @@ p:last-of-type {
 }
 
 #list-albums {
-  margin-left: 380px;
+  margin-left: 40px;
 }
 
-#list-artists-and-albums {
+/*#list-artists-and-albums {
   margin: 0 750px 0 330px;
 } 
 
 #click-me {
   margin-left: 10px;
-}
+} */
 
 #band-name {
   height: 30px;
@@ -190,8 +194,8 @@ a:last-of-type {
   display: inline;
 } */
 
-.navbar {
+/* .navbar {
   display: flex;
   flex-direction: row;
   display: inline;
-}
+} */

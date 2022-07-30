@@ -1356,7 +1356,7 @@ const albums = () => {
 };
 
 
-// Display all tracks from an album to console
+// Display all tracks from an album to console using Object.values()
 
 /* let allAlbums = Object.values(music["thin lizzy"].albums["thunder and lightening"].tracks);
 for (i = 0; i < allAlbums.length; i++) {
